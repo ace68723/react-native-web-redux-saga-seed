@@ -1,4 +1,5 @@
 import { put, call  } from 'redux-saga/effects'
+import * as ProductListService from '../services/ProductListService';
 
 export default{
   namespace: 'ProductListModel',
@@ -23,8 +24,11 @@ export default{
   effects:{
     *fetchData (action) {
       try {
-        yield put({type: 'ProductListModel/initState'});
-      } catch (e) {}
+        const result =yield call(ProductListService.getWhslSku,{})
+        console.log('result',result)
+      } catch (e) {
+        console.log(e)
+      }
     },
   }
 }

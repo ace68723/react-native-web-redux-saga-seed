@@ -25,6 +25,7 @@ const babelLoaderConfiguration = {
       // The 'react-native' preset is recommended to match React Native's packager
       presets: ['react-native'],
       // Re-write paths to import only the modules needed by the app
+      // ,'babel-plugin-transform-runtime'
       plugins: ['react-native-web']
     }
   }

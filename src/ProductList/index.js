@@ -27,7 +27,6 @@ class ProductList extends Component {
   }
   handleOnPressFetch = () => {
     const { dispatch } = this.props
-    // dispatch({type:'ProductListModel/fetch'})
     dispatch({type:'ProductListModel/fetchData'})
   }
   handleAddStepOnPress = () => {
