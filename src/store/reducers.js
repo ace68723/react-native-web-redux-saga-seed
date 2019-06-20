@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import ProductListModel  from './ProductList/Models/ProductListModel'
+import ProductListModel  from '../ProductList/Models/ProductListModel'
 
 
 function createReducer(initialState, handlers) {

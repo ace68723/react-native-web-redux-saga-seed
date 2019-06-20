@@ -1,6 +1,5 @@
 import { all, takeEvery } from 'redux-saga/effects'
-import { HomeModelEffects } from './Home/Models/HomeModel'
-import ProductListModel from './ProductList/Models/ProductListModel'
+import ProductListModel from '../ProductList/Models/ProductListModel'
 
 
 export default function* effects() {
